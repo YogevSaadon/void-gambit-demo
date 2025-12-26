@@ -1,0 +1,66 @@
+[gd_scene load_steps=6 format=3 uid="uid://dubdil0384o7s"]
+
+[ext_resource type="Script" path="res://scripts/game/Level.gd" id="1_obx4w"]
+[ext_resource type="PackedScene" uid="uid://cjja0oj0j46qx" path="res://scenes/actors/Player.tscn" id="2_3rjn1"]
+[ext_resource type="Script" path="res://scripts/game/managers/WaveManager.gd" id="2_8hdw5"]
+[ext_resource type="Texture2D" uid="uid://dfxdaty77aonu" path="res://assets/backrounds/space2.png" id="2_dgl01"]
+[ext_resource type="PackedScene" uid="uid://bydtgr2motkkk" path="res://scenes/game/LevelUI.tscn" id="2_nbm43"]
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_obx4w")
+DISTANCE_VARIANCE = null
+SPAWN_MARGIN = null
+DEBUG_SPAWNS = null
+
+[node name="Backround" type="Sprite2D" parent="."]
+position = Vector2(566, 311)
+scale = Vector2(2.20312, 1.67383)
+texture = ExtResource("2_dgl01")
+
+[node name="Backround2" type="Sprite2D" parent="."]
+position = Vector2(2811, 304)
+scale = Vector2(2.20312, 1.67383)
+texture = ExtResource("2_dgl01")
+
+[node name="Backround3" type="Sprite2D" parent="."]
+position = Vector2(-1662, 2004)
+scale = Vector2(2.20312, 1.67383)
+texture = ExtResource("2_dgl01")
+
+[node name="Backround4" type="Sprite2D" parent="."]
+position = Vector2(-1672, 312)
+scale = Vector2(2.20312, 1.67383)
+texture = ExtResource("2_dgl01")
+
+[node name="Backround5" type="Sprite2D" parent="."]
+position = Vector2(-1662, -1382)
+scale = Vector2(2.20312, 1.67383)
+texture = ExtResource("2_dgl01")
+
+[node name="Backround6" type="Sprite2D" parent="."]
+position = Vector2(566, -1402)
+scale = Vector2(2.20312, 1.67383)
+texture = ExtResource("2_dgl01")
+
+[node name="Backround7" type="Sprite2D" parent="."]
+position = Vector2(2824, 2014)
+scale = Vector2(2.20312, 1.67383)
+texture = ExtResource("2_dgl01")
+
+[node name="Backround8" type="Sprite2D" parent="."]
+position = Vector2(586, 2004)
+scale = Vector2(2.20312, 1.67383)
+texture = ExtResource("2_dgl01")
+
+[node name="Backround9" type="Sprite2D" parent="."]
+position = Vector2(2811, -1400)
+scale = Vector2(2.20312, 1.67383)
+texture = ExtResource("2_dgl01")
+
+[node name="LevelUI" parent="." instance=ExtResource("2_nbm43")]
+
+[node name="WaveManager" type="Node2D" parent="."]
+script = ExtResource("2_8hdw5")
+
+[node name="Player" parent="." instance=ExtResource("2_3rjn1")]
+position = Vector2(562, 308)
