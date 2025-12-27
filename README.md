@@ -1,6 +1,6 @@
 ## Play My Game
 
-**[Play Void Gambit Online](https://yogevsaadon.github.io/void-gambit/)**
+**[Play Void Gambit Online](https://yogevsaadon.github.io/void-gambit-demo)**
 
 <!-- Hero GIFs -->
 <p align="center">
